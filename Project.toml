@@ -1,0 +1,12 @@
+name = "xESMF"
+uuid = "2e0b0046-e7a1-486f-88de-807ee8ffabe5"
+authors = ["Gregory Wagner <wagner.greg@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+CondaPkg = "992eb4ea-22a4-4c89-a5bb-47a3300528ab"
+PythonCall = "6099a3de-0909-46bc-b1f4-468b9a2dfc0d"
+
+[compat]
+CondaPkg = "0.2.31"
+PythonCall = "0.9.27"
