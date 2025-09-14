@@ -1,3 +1,9 @@
 
 [deps.xesmf]
 channel = "conda-forge"
+
+[deps.esmf]
+channel = "conda-forge"
+
+[deps.esmpy]
+channel = "conda-forge"
