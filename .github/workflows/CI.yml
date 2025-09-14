@@ -14,9 +14,6 @@ jobs:
       fail-fast: false
       matrix:
         version:
-          - '1.6'  # LTS
-          - '1.8'  # LTS
-          - '1.9'
           - '1.10'
           - '1.11'
         os:
@@ -25,21 +22,6 @@ jobs:
           - macos-latest
         arch:
           - x64
-        exclude:
-          # 32-bit Julia is not available on macOS
-          - os: macos-latest
-            arch: x86
-          # 32-bit Julia is not available on Windows
-          - os: windows-latest
-            arch: x86
-        include:
-          # 32-bit Julia is only available on Linux
-          - version: '1.6'
-            os: ubuntu-latest
-            arch: x86
-          - version: '1.8'
-            os: ubuntu-latest
-            arch: x86
 
     steps:
       - uses: actions/checkout@v4
@@ -63,9 +45,3 @@ jobs:
 
       - uses: julia-actions/julia-runtest@v1
 
-      - uses: julia-actions/julia-processcoverage@v1
-
-      - uses: codecov/codecov-action@v3
-        with:
-          file: lcov.info
-          fail_ci_if_error: true
