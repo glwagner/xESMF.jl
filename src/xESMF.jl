@@ -5,8 +5,8 @@ using PythonCall
 using SparseArrays
 
 # Try to import xesmf with better error handling
-try
-    xesmf = pyimport("xesmf")
+xesmf = try
+    pyimport("xesmf")
 catch e
     if occursin("No module named 'ESMF'", string(e))
         error("""
