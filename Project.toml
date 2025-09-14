@@ -12,3 +12,10 @@ SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
 CondaPkg = "0.2.31"
 PythonCall = "0.9.27"
 SparseArrays = "1.11.0"
+Test = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

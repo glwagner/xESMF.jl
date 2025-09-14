@@ -6,8 +6,7 @@ using SparseArrays
 
 xesmf = pyimport("xesmf")
 
-sparse_regridder_weights(regridder) =
-    sparse_regridder_weights(Float64, regridder)
+sparse_regridder_weights(regridder) = sparse_regridder_weights(Float64, regridder)
 
 """
     sparse_regridder_weights(FT, regridder)
@@ -28,3 +27,4 @@ function sparse_regridder_weights(FT, regridder)
 end
 
 end # module xESMF
+
