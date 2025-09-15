@@ -2,8 +2,8 @@
 
 Julia wrapper for [xESMF](https://github.com/pangeo-data/xESMF), a python package maintined by [pangeo](https://pangeo.io/).
 
-[![CI](https://github.com/gregorywagner/xESMF.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/gregorywagner/xESMF.jl/actions)
-[![Documentation](https://github.com/gregorywagner/xESMF.jl/actions/workflows/documentation.yml/badge.svg)](https://gregorywagner.github.io/xESMF.jl/)
+[![CI](https://github.com/glwagner/xESMF.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/glwagner/xESMF.jl/actions)
+[![Documentation](https://github.com/glwagner/xESMF.jl/actions/workflows/documentation.yml/badge.svg)](https://glwagner.github.io/xESMF.jl/)
 
 A Julia package for sparse regridding weights using the xESMF Python library.
 
@@ -45,7 +45,7 @@ cll = CenterField(ll)
 
 ## Documentation
 
-Full documentation is available at: https://gregorywagner.github.io/xESMF.jl/
+Full documentation is available at: https://glwagner.github.io/xESMF.jl/
 
 ## License
 
