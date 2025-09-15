@@ -5,8 +5,6 @@ Julia wrapper for [xESMF](https://github.com/pangeo-data/xESMF), a python packag
 [![CI](https://github.com/glwagner/xESMF.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/glwagner/xESMF.jl/actions)
 [![Documentation](https://github.com/glwagner/xESMF.jl/actions/workflows/documentation.yml/badge.svg)](https://glwagner.github.io/xESMF.jl/)
 
-A Julia package for sparse regridding weights using the xESMF Python library.
-
 ## Overview
 
 xESMF.jl provides a Julia interface to the xESMF (xarray Earth System Model Exchange Format) Python library, which provides tools for interpolating and regridding fields between arbitrary grids.
