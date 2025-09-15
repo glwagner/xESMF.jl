@@ -1,5 +1,4 @@
-using Test
-using xESMF
+include("setup_runtests.jl")
 
 @testset "xESMF.jl Tests" begin
     @testset "Unit Tests" begin

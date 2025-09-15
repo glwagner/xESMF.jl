@@ -1,6 +1,4 @@
-# Basic functionality tests for xESMF.jl
-
-using PythonCall
+include("setup_runtests.jl")
 
 @testset "Basic Module Tests" begin
     # Test that the module loads correctly
