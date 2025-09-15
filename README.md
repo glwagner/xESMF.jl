@@ -7,7 +7,7 @@ Julia wrapper for [xESMF](https://github.com/pangeo-data/xESMF), a python packag
 
 ## Overview
 
-xESMF.jl provides a Julia interface to the xESMF (xarray Earth System Model Exchange Format) Python library, which provides tools for interpolating and regridding fields between arbitrary grids.
+xESMF.jl provides a Julia interface to the [xESMF](https://github.com/pangeo-data/xESMF) (xarray Earth System Model Exchange Format) Python library, which provides tools for interpolating and regridding fields between arbitrary grids.
 This wrapper provides regridding functionality for [Oceananigans.jl](https://github.com/CliMA/Oceananigans.jl).
 
 ## Installation
