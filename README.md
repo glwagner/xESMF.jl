@@ -9,7 +9,8 @@ A Julia package for sparse regridding weights using the xESMF Python library.
 
 ## Overview
 
-xESMF.jl provides a Julia interface to the xESMF (xarray Earth System Model Exchange Format) Python library, enabling efficient computation of sparse regridding weights for Earth system models. This package is particularly useful for working with Oceananigans.jl and other geophysical modeling packages.
+xESMF.jl provides a Julia interface to the xESMF (xarray Earth System Model Exchange Format) Python library, which provides tools for interpolating and regridding fields between arbitrary grids.
+This wrapper provides regridding functionality for [Oceananigans.jl(https://github.com/CliMA/Oceananigans.jl).
 
 ## Installation
 
@@ -19,6 +20,9 @@ Pkg.add("xESMF")
 ```
 
 ## Quick Start
+
+To compute weights for regridding a field on `Oceananigans.TripolarGrid`
+to a field on `Oceananigans.LatitudeLongitudeGrid`,
 
 ```julia
 using Oceananigans
@@ -33,20 +37,13 @@ ctg = CenterField(tg)
 cll = CenterField(ll)
 
 # Compute regridding weights
-# weights = sparse_regridding_weights(cll, ctg)
+weights = sparse_regridding_weights(cll, ctg)
 ```
-
-## Features
-
-- **Sparse Regridding Weights**: Compute sparse matrices for efficient regridding between different grid types
-- **Python Integration**: Seamless integration with the xESMF Python library via PythonCall.jl
-- **Oceananigans Compatible**: Designed to work with Oceananigans.jl grids and fields
-- **Type Flexibility**: Support for different numeric types (Float64, Float32, etc.)
 
 ## Documentation
 
-Full documentation is available at: https://glwagner.github.io/xESMF.jl/
+Documentation is available at https://glwagner.github.io/xESMF.jl/
 
 ## License
 
-This package is licensed under the same terms as the Julia language itself.
+This package uses the MIT license.
