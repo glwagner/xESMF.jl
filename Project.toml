@@ -1,4 +1,4 @@
-name = "xESMF"
+name = "XESMF"
 uuid = "2e0b0046-e7a1-486f-88de-807ee8ffabe5"
 authors = ["Gregory Wagner <wagner.greg@gmail.com>"]
 version = "0.1.0"
@@ -10,12 +10,15 @@ SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
 
 [compat]
 CondaPkg = "0.2.31"
+Oceananigans = "0.98"
 PythonCall = "0.9.27"
 SparseArrays = "1"
 Test = "1"
+julia = "1.10"
 
 [extras]
+Oceananigans = "9e8cae18-63c1-5223-a75c-80ca9d6e9a09"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [targets]
-test = ["Test"]
+test = ["Test", "Oceananigans"]

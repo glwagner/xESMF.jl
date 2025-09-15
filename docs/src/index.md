@@ -1,4 +1,4 @@
-# xESMF.jl
+# XESMF.jl
 
 [![CI](https://github.com/gregorywagner/xESMF.jl/workflows/CI/badge.svg)](https://github.com/gregorywagner/xESMF.jl/actions)
 [![Documentation](https://github.com/gregorywagner/xESMF.jl/workflows/Documentation/badge.svg)](https://gregorywagner.github.io/xESMF.jl/)
@@ -7,7 +7,7 @@ A Julia package for sparse regridding weights using the xESMF Python library.
 
 ## Overview
 
-xESMF.jl provides a Julia interface to the xESMF (xarray Earth System Model Exchange Format) Python library, enabling efficient computation of sparse regridding weights for Earth system models. This package is particularly useful for working with Oceananigans.jl and other geophysical modeling packages.
+XESMF.jl provides a Julia interface to the xESMF (xarray Earth System Model Exchange Format) Python library, enabling efficient computation of sparse regridding weights for Earth system models. This package is particularly useful for working with Oceananigans.jl and other geophysical modeling packages.
 
 ## Features
 
@@ -20,14 +20,14 @@ xESMF.jl provides a Julia interface to the xESMF (xarray Earth System Model Exch
 
 ```julia
 using Pkg
-Pkg.add("xESMF")
+Pkg.add("XESMF")
 ```
 
 ## Quick Start
 
 ```julia
 using Oceananigans
-using xESMF
+using XESMF
 
 # Create grids
 tg = TripolarGrid(size=(360, 170, 1), z=(0, 1))
@@ -43,7 +43,7 @@ cll = CenterField(ll)
 
 ## Dependencies
 
-xESMF.jl depends on:
+XESMF.jl depends on:
 - **CondaPkg.jl**: For managing Python dependencies
 - **PythonCall.jl**: For Python-Julia interoperability
 - **SparseArrays.jl**: For sparse matrix operations
@@ -52,11 +52,11 @@ The package automatically installs the xESMF Python library via CondaPkg.
 
 ## Integration with Oceananigans.jl
 
-xESMF.jl is designed to work seamlessly with Oceananigans.jl for ocean modeling applications:
+XESMF.jl is designed to work seamlessly with Oceananigans.jl for ocean modeling applications:
 
 ```julia
 using Oceananigans
-using xESMF
+using XESMF
 
 # Create grids
 tg = TripolarGrid(size=(360, 170, 1), z=(0, 1))

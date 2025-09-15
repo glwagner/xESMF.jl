@@ -1,6 +1,6 @@
 # Development
 
-This page provides information for developers and contributors to xESMF.jl.
+This page provides information for developers and contributors to XESMF.jl.
 
 ## Development Setup
 
@@ -13,8 +13,8 @@ This page provides information for developers and contributors to xESMF.jl.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/gregorywagner/xESMF.jl.git
-   cd xESMF.jl
+   git clone https://github.com/gregorywagner/XESMF.jl.git
+   cd XESMF.jl
    ```
 
 2. Start Julia and activate the project:

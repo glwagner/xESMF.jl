@@ -1,13 +1,13 @@
 # Examples
 
-This page provides examples of how to use xESMF.jl in various scenarios.
+This page provides examples of how to use XESMF.jl in various scenarios.
 
 ## Basic Usage
 
-The main function in xESMF.jl is `sparse_regridder_weights`, which computes sparse regridding weights from a regridder object.
+The main function in XESMF.jl is `sparse_regridder_weights`, which computes sparse regridding weights from a regridder object.
 
 ```julia
-using xESMF
+using XESMF
 
 # Example with a regridder object (mock example)
 # regridder = create_regridder(source_grid, target_grid)
@@ -21,13 +21,13 @@ using xESMF
 
 ## Working with Oceananigans.jl
 
-xESMF.jl is designed to work seamlessly with Oceananigans.jl for ocean modeling applications.
+XESMF.jl is designed to work seamlessly with Oceananigans.jl for ocean modeling applications.
 
 ### Creating Grids and Fields
 
 ```julia
 using Oceananigans
-using xESMF
+using XESMF
 
 # Create different grid types
 tripolar_grid = TripolarGrid(size=(360, 170, 1), z=(0, 1))
@@ -55,7 +55,7 @@ latlon_field = CenterField(latlon_grid)
 
 ## Type Flexibility
 
-xESMF.jl supports different numeric types for the regridding weights:
+XESMF.jl supports different numeric types for the regridding weights:
 
 ```julia
 # Float64 (default)
