@@ -17,27 +17,6 @@ using Pkg
 Pkg.add("XESMF")
 ```
 
-## Quick Start
-
-To compute weights for regridding a field on `Oceananigans.TripolarGrid`
-to a field on `Oceananigans.LatitudeLongitudeGrid`,
-
-```julia
-using Oceananigans
-using XESMF
-
-# Create grids
-tg = TripolarGrid(size=(360, 170, 1), z=(0, 1))
-ll = LatitudeLongitudeGrid(size=(360, 180, 1), longitude=(0, 360), latitude=(-90, 90), z=(0, 1))
-
-# Create center fields
-ctg = CenterField(tg)
-cll = CenterField(ll)
-
-# Compute regridding weights
-weights = sparse_regridding_weights(cll, ctg)
-```
-
 ## Documentation
 
 Documentation is available at https://glwagner.github.io/xESMF.jl/
