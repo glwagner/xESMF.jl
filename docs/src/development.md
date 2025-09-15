@@ -13,7 +13,7 @@ This page provides information for developers and contributors to XESMF.jl.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/gregorywagner/XESMF.jl.git
+   git clone https://github.com/numericalearth/XESMF.jl.git
    cd XESMF.jl
    ```
 

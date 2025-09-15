@@ -14,7 +14,7 @@ makedocs(
     ],
     format = Documenter.HTML(
         prettyurls = get(ENV, "CI", "false") == "true",
-        canonical = "https://glwagner.github.io/xESMF.jl",
+        canonical = "https://numericalearth.github.io/XESMF.jl",
         assets = String[],
     ),
     checkdocs = :exports,
@@ -23,7 +23,7 @@ makedocs(
 
 # Deploy documentation to GitHub Pages
 deploydocs(
-    repo = "github.com/glwagner/xESMF.jl.git",
+    repo = "github.com/numericalearth/XESMF.jl.git",
     devbranch = "main",
     push_preview = true,
 )

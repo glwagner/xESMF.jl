@@ -1,19 +1,19 @@
 # API Reference
 
-This page documents the public API of xESMF.jl.
+This page documents the public API of XESMF.jl.
 
 ## Main Functions
 
 ```@docs
-xESMF.sparse_regridder_weights
+XESMF.sparse_regridder_weights
 ```
 
 ## Module Contents
 
-The `xESMF` module provides the following functionality:
+The `XESMF` module provides the following functionality:
 
 - `sparse_regridder_weights`: Main function for computing sparse regridding weights
-- `xesmf`: Python xESMF module interface (internal)
+- `xesmf`: Python XESMF module interface (internal)
 
 ## Internal Functions
 
