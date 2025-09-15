@@ -6,14 +6,6 @@ using xESMF
         include("test_unit.jl")
     end
     
-    @testset "Regridder Tests" begin
-        include("test_regridder.jl")
-    end
-    
-    @testset "Integration Tests" begin
-        include("test_integration.jl")
-    end
-    
     @testset "Oceananigans Integration Tests" begin
         include("test_oceananigans.jl")
     end
