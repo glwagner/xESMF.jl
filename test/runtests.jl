@@ -13,4 +13,8 @@ using xESMF
     @testset "Integration Tests" begin
         include("test_integration.jl")
     end
+    
+    @testset "Oceananigans Integration Tests" begin
+        include("test_oceananigans.jl")
+    end
 end
