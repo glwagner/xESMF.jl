@@ -77,8 +77,13 @@ end
         # Verify coordinate structures are valid
         @test haskey(src_coordinates, "lat")
         @test haskey(src_coordinates, "lon")
+        @test haskey(src_coordinates, "lat_b")
+        @test haskey(src_coordinates, "lon_b")
+
         @test haskey(dst_coordinates, "lat")
         @test haskey(dst_coordinates, "lon")
+        @test haskey(dst_coordinates, "lat_b")
+        @test haskey(dst_coordinates, "lon_b")
         
         # Test basic grid properties
         @test size(tg) == (360, 170, 1)
