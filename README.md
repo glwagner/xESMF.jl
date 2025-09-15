@@ -1,4 +1,4 @@
-# xESMF.jl
+# XESMF.jl
 
 Julia wrapper for [xESMF](https://github.com/pangeo-data/xESMF), a python package maintined by [pangeo](https://pangeo.io/).
 
@@ -9,20 +9,20 @@ A Julia package for sparse regridding weights using the xESMF Python library.
 
 ## Overview
 
-xESMF.jl provides a Julia interface to the xESMF (xarray Earth System Model Exchange Format) Python library, enabling efficient computation of sparse regridding weights for Earth system models. This package is particularly useful for working with Oceananigans.jl and other geophysical modeling packages.
+XESMF.jl provides a Julia interface to the xESMF (xarray Earth System Model Exchange Format) Python library, enabling efficient computation of sparse regridding weights for Earth system models. This package is particularly useful for working with Oceananigans.jl and other geophysical modeling packages.
 
 ## Installation
 
 ```julia
 using Pkg
-Pkg.add("xESMF")
+Pkg.add("XESMF")
 ```
 
 ## Quick Start
 
 ```julia
 using Oceananigans
-using xESMF
+using XESMF
 
 # Create grids
 tg = TripolarGrid(size=(360, 170, 1), z=(0, 1))

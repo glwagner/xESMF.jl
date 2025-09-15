@@ -1,4 +1,4 @@
-name = "xESMF"
+name = "XESMF"
 uuid = "2e0b0046-e7a1-486f-88de-807ee8ffabe5"
 authors = ["Gregory Wagner <wagner.greg@gmail.com>"]
 version = "0.1.0"

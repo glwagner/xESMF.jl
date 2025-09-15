@@ -1,6 +1,6 @@
 include("setup_runtests.jl")
 
-@testset "xESMF.jl Tests" begin
+@testset "XESMF.jl Tests" begin
     @testset "Unit Tests" begin
         include("test_unit.jl")
     end

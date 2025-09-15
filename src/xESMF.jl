@@ -1,4 +1,4 @@
-module xESMF
+module XESMF
 
 using CondaPkg
 using PythonCall
@@ -10,7 +10,7 @@ xesmf = try
 catch e
     if occursin("No module named 'ESMF'", string(e))
         error("""
-        xESMF.jl requires the ESMF library to be installed.
+        XESMF.jl requires the ESMF library to be installed.
         This is usually handled automatically by CondaPkg, but on some systems
         (particularly Windows) it may need to be installed manually.
         
@@ -42,5 +42,5 @@ function sparse_regridder_weights(FT, regridder)
     return weights
 end
 
-end # module xESMF
+end # module XESMF
 

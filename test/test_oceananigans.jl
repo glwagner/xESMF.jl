@@ -35,7 +35,7 @@ function regridding_weights(dst_field, src_field)
     λvˢ = λnodes(src_grid, Face(), Face(), ℓz, with_halos=true)
     φvˢ = φnodes(src_grid, Face(), Face(), ℓz, with_halos=true)
 
-    # Build data structures expected by xESMF.
+    # Build data structures expected by XESMF.
     Nˢx, Nˢy, Nˢz = size(src_field)
     Nᵈx, Nᵈy, Nᵈz = size(dst_field)
 
@@ -89,11 +89,11 @@ end
         @test size(tg) == (360, 170, 1)
         @test size(ll) == (360, 180, 1)
 
-        # xesmf = xESMF.xesmf
+        # xesmf = XESMF.xesmf
         # periodic = Oceananigans.Grids.topology(ctg.grid, 1) === Periodic
         # method = "conservative"
         # regridder = xesmf.Regridder(src_coordinates, dst_coordinates, method; periodic)
-        # weights = xESMF.sparse_regridding_weights(regridder)
+        # weights = XESMF.sparse_regridding_weights(regridder)
     end
 end
     

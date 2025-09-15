@@ -1,11 +1,11 @@
 using Documenter
-using xESMF
+using XESMF
 
 # Set up the documentation
 makedocs(
-    sitename = "xESMF.jl",
+    sitename = "XESMF.jl",
     authors = "Gregory Wagner <wagner.greg@gmail.com>",
-    modules = [xESMF],
+    modules = [XESMF],
     pages = [
         "Home" => "index.md",
         "API Reference" => "api.md",

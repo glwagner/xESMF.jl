@@ -2,11 +2,11 @@ include("setup_runtests.jl")
 
 @testset "Basic Module Tests" begin
     # Test that the module loads correctly
-    @test isdefined(xESMF, :xesmf)
+    @test isdefined(XESMF, :xesmf)
     
     # Test that the main function is available
-    @test isdefined(xESMF, :sparse_regridder_weights)
+    @test isdefined(XESMF, :sparse_regridder_weights)
     
     # Test that xesmf Python module is imported
-    @test xESMF.xesmf isa PythonCall.Py
+    @test XESMF.xesmf isa PythonCall.Py
 end
