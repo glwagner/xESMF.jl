@@ -1,6 +1,6 @@
 # xESMF.jl
 
-Julia wrapper for [xESMF](https://github.com/pangeo-data/xESMF), a python package maintined by [pangeo](https://pangeo.io/).
+Julia wrapper for [xESMF](https://github.com/pangeo-data/xESMF), a python package maintained by [pangeo](https://pangeo.io/).
 
 [![CI](https://github.com/glwagner/xESMF.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/glwagner/xESMF.jl/actions)
 [![Documentation](https://github.com/glwagner/xESMF.jl/actions/workflows/documentation.yml/badge.svg)](https://glwagner.github.io/xESMF.jl/)
