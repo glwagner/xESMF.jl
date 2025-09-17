@@ -89,11 +89,11 @@ end
         @test size(tg) == (360, 170, 1)
         @test size(ll) == (360, 180, 1)
 
-        # xesmf = XESMF.xesmf
-        # periodic = Oceananigans.Grids.topology(ctg.grid, 1) === Periodic
-        # method = "conservative"
-        # regridder = xesmf.Regridder(src_coordinates, dst_coordinates, method; periodic)
-        # weights = XESMF.sparse_regridding_weights(regridder)
+        xesmf = XESMF.xesmf
+        periodic = Oceananigans.Grids.topology(ctg.grid, 1) === Periodic
+        method = "conservative"
+        regridder = xesmf.Regridder(src_coordinates, dst_coordinates, method; periodic)
+        weights = XESMF.sparse_regridding_weights(regridder)
     end
 end
     
