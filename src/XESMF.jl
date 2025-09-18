@@ -13,7 +13,7 @@ catch e
         XESMF.jl requires the ESMF library to be installed.
         This is usually handled automatically by CondaPkg, but on some systems
         (particularly Windows) it may need to be installed manually.
-        
+
         Try running:
         julia -e "using CondaPkg; CondaPkg.add([\"esmf\", \"esmpy\"])"
         """)
@@ -43,4 +43,3 @@ function sparse_regridder_weights(FT, regridder)
 end
 
 end # module XESMF
-
